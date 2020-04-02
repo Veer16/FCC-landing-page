@@ -1,79 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <script src="https://kit.fontawesome.com/3b9f21bd07.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/3b9f21bd07.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Landing Page</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="page-wrapper">
-        <header id="header">
-            <div class="logo">
-                <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="Tumbone company logo"
-                    id="header-image">
+      <header id="header">
+        <div class="logo">
+          <img
+            src="https://s3.amazonaws.com/freecodecamp/original_trombones.png"
+            alt="Tumbone company logo"
+            id="header-image"
+          />
+        </div>
+        <nav id="nav-bar">
+          <ul>
+            <li class="nav-link">Feature</li>
+            <li class="nav-link">HowItWorks</li>
+            <li class="nav-link">Pricing</li>
+          </ul>
+        </nav>
+      </header>
+      <div id="hero">
+        <h2>Handcrafted, home-made masterpieces</h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <input
+            type="submit"
+            class="form-control"
+            id="submit"
+            class="btn"
+            value="Get Started"
+          />
+        </form>
+      </div>
+
+      <!-- Features -->
+      <div class="container">
+        <section id="features">
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+            <div class="desc">
+              <h2>Premium Materials</h2>
+              <p>
+                Our trombones use the shiniest brass which is sourced locally.
+                This will increase the longevity of your purchase.
+              </p>
             </div>
-            <nav id="nav-bar">
-                <ul>
-                    <li class="nav-link">Feature</li>
-                    <li class="nav-link">HowItWorks</li>
-                    <li class="nav-link">Pricing</li>
-                </ul>
-            </nav>
-        </header>
-        <div id="hero">
-            <h2>Handcrafted, home-made masterpieces</h2>
-            <form action="#" id="form">
-                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                <input type="submit" class="form-control" id="submit" class="btn" value="Get Started">
-            </form>
-        </div>
+          </div>
 
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+            <div class="desc">
+              <h2>Fast Shipping</h2>
+              <p>
+                We make sure you recieve your trombone as soon as we have
+                finished making it. We also provide free returns if you are not
+                satisfied.
+              </p>
+            </div>
+          </div>
 
-        <!-- Features -->
-        <div class="container">
-            <section id="features">
-                <div class="grid">
-                    <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
-                    <div class="desc">
-                        <h2>Premium Materials
-                        </h2>
-                        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the
-                            longevity
-                            of your purchase.</p>
-                    </div>
-                </div>
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-battery-full"></i></div>
+            <div class="desc">
+              <h2>
+                Quality Assurance
+              </h2>
+              <p>
+                For every purchase you make, we will ensure there are no damages
+                or faults and we will check and test the pitch of your
+                instrument.
+              </p>
+            </div>
+          </div>
+        </section>
 
-                <div class="grid">
-                    <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
-                    <div class="desc">
-                        <h2>Fast Shipping
-                        </h2>
-                        <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide
-                            free returns if you are not satisfied.</p>
-                    </div>
-                </div>
+        <section id="how-it-works">
+          <iframe
+            id="video"
+            src="https://www.youtube.com/watch?v=y8Yv4pnO7qc&feature=emb_title"
+            frameborder="0"
+            height="315"
+            allowfullscreen
+          ></iframe>
+        </section>
 
+        <section id="pricing">
+          <div class="product">
+            <div class="level">
+              <h1>TENOR TROMBONE</h1>
+            </div>
+            <h2>$600</h2>
+            <ol>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ol>
+            <button>select</button>
+          </div>
 
-                <div class="grid">
-                    <div class="icon"><i class="fa fa-3x fa-battery-full"></i></div>
-                    <div class="desc">
-                        <h2>
-                            Quality Assurance
-                        </h2>
-                        <p>For every purchase you make, we will ensure there are no damages or faults and we will check
-                            and
-                            test the pitch of your instrument.</p>
-                    </div>
-                </div>
-            </section>
-        </div>
+          <div class="product">
+            <div class="level">
+              <h1>BASS TROMBONE</h1>
+            </div>
+            <h2>$900</h2>
+            <ol>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ol>
+            <button>select</button>
+          </div>
 
+          <div class="product">
+            <div class="level">
+              <h1>VALVE TROMBONE</h1>
+            </div>
+            <h2>$1200</h2>
+            <ol>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ol>
+            <button>select</button>
+          </div>
+        </section>
+
+        <footer>
+          <ol>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Contact</li>
+          </ol>
+          <span>Copyright 2016, Original Trombones</span>
+        </footer>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
